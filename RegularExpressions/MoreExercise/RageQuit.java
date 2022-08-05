@@ -16,16 +16,16 @@ public class RageQuit {
         while (matcher.find()) {
             String text = matcher.group("text");
             int repetitions = Integer.parseInt(matcher.group("repetitions"));
-            for (int i = 0; i <repetitions ; i++) {
+            for (int i = 0; i < repetitions; i++) {
                 rageMassage.append(text);
             }
         }
-        Set<Character> uniqueSymbols=new HashSet<>();
+        Set<Character> uniqueSymbols = new HashSet<>();
         for (int i = 0; i < rageMassage.length(); i++) {
-            char toAdd= rageMassage.charAt(i);
+            char toAdd = rageMassage.charAt(i);
             uniqueSymbols.add(toAdd);
         }
-        System.out.printf("Unique symbols used: %d%n",uniqueSymbols.size());
+        System.out.printf("Unique symbols used: %d%n", uniqueSymbols.size());
         System.out.println(rageMassage);
     }
 }
