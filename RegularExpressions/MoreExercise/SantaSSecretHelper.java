@@ -4,7 +4,7 @@ import java.util.Scanner;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-public class SantasSecretHelper {
+public class SantaSSecretHelper {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
         int key = Integer.parseInt(scan.nextLine());
