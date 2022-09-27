@@ -1,14 +1,13 @@
 package Methods.MoreExercise;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
-import java.util.Scanner;
+import java.util.*;
 
 public class ArrayManipulator {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
+
         int[] array = Arrays.stream(scan.nextLine().split("\\s+")).mapToInt(Integer::parseInt).toArray();
+
         String input = scan.nextLine();
         while (!input.equals("end")) {
             String[] command = input.split("\\s+");
@@ -113,6 +112,7 @@ public class ArrayManipulator {
                                 break;
                             }
                         }
+                        Collections.reverse(numbers);
                         System.out.println(numbers);
                     } else {
                         for (int i = array.length - 1; i >= 0; i--) {
@@ -124,6 +124,7 @@ public class ArrayManipulator {
                                 break;
                             }
                         }
+                        Collections.reverse(numbers);
                         System.out.println(numbers);
                     }
                     break;
