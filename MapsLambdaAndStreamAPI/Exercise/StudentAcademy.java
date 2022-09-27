@@ -19,6 +19,7 @@ public class StudentAcademy {
         }
         studentsWithGrades.entrySet().stream()
                 .filter(entry -> entry.getValue().stream().mapToDouble(Double::doubleValue).average().getAsDouble() >= 4.5)
-                .forEach(entry -> System.out.printf("%s -> %.2f%n", entry.getKey(), entry.getValue().stream().mapToDouble(Double::doubleValue).average().getAsDouble()));
+                .forEach(entry -> System.out.printf("%s -> %.2f%n", entry.getKey()
+                        , entry.getValue().stream().mapToDouble(Double::doubleValue).average().getAsDouble()));
     }
 }
