@@ -1,6 +1,5 @@
 package Arrays.Exercise;
 
-import java.util.Arrays;
 import java.util.Scanner;
 
 public class Train {
@@ -14,7 +13,7 @@ public class Train {
             passengers[i] = ppl;
             sum += passengers[i];
         }
-      //  Arrays.stream(passengers).forEach(wagon -> System.out.print(wagon + " "));
+        //  Arrays.stream(passengers).forEach(wagon -> System.out.print(wagon + " "));
         for (int passenger : passengers) {
             System.out.printf("%d ", passenger);
         }
