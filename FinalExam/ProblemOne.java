@@ -13,12 +13,12 @@ public class ProblemOne {
 
             if (command.contains("Make Upper")) {
                 int index = Integer.parseInt(commandParts[2]);
-                password = changeCharCaseing(password, index, commandParts[1]);
+                password = changeCharCasing(password, index, commandParts[1]);
                 System.out.println(password);
 
             } else if (command.contains("Make Lower")) {
                 int index = Integer.parseInt(commandParts[2]);
-                password = changeCharCaseing(password, index, commandParts[1]);
+                password = changeCharCasing(password, index, commandParts[1]);
                 System.out.println(password);
 
             } else if (command.contains("Insert")) {
@@ -100,7 +100,7 @@ public class ProblemOne {
         return false;
     }
 
-    private static String changeCharCaseing(String password, int index, String predicate) {
+    private static String changeCharCasing(String password, int index, String predicate) {
         StringBuilder newPassword = new StringBuilder();
         for (int i = 0; i < password.length(); i++) {
             if (i == index && predicate.equals("Upper")) {
